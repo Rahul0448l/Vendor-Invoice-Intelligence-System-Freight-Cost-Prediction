@@ -2,7 +2,7 @@ import joblib
 from pathlib import Path
 
 from data_preprocessing import load_vendor_invoice_data, prepare_features, split_data
-from modeling_evaluation import (
+from model_evaluation import (
     train_linear_regression,
     train_decision_tree,
     train_random_forest,
@@ -11,7 +11,7 @@ from modeling_evaluation import (
 
 
 def main():
-    db_path = "data/inventory.db"
+    db_path = "../data/inventory.db"
     model_dir = Path("models")
     model_dir.mkdir(exist_ok=True)
 
